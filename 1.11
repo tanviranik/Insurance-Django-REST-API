@@ -1,0 +1,4 @@
+Requirement already satisfied: django-pyodbc-azure in c:\users\administrator\appdata\local\programs\python\python37\lib\site-packages (2.1.0.0)
+Requirement already satisfied: pyodbc>=3.0 in c:\users\administrator\appdata\local\programs\python\python37\lib\site-packages (from django-pyodbc-azure) (4.0.26)
+Requirement already satisfied: Django<2.2,>=2.1.0 in c:\users\administrator\appdata\local\programs\python\python37\lib\site-packages (from django-pyodbc-azure) (2.1.8)
+Requirement already satisfied: pytz in c:\users\administrator\appdata\local\programs\python\python37\lib\site-packages (from Django<2.2,>=2.1.0->django-pyodbc-azure) (2019.1)
