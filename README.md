@@ -1,6 +1,8 @@
 # Insurance Django REST API
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
+
+
 A simple analytics platform for an Insurance company using the Kaggle dataset Agency Performance Model.
 
 # Preamble
@@ -14,10 +16,13 @@ d110c55abdfe0cdc88359b0d718288cb06513903
 Please take a note of this token which will be needed to request data from this API.
 
 ### Token request endpoint:
+
 * [Api type] - Post
 * [End Point to call] - endpoint: http://ec2-54-159-5-43.compute-1.amazonaws.com:8000/insurance/api/v0/login
 * [Parameters] - username : demo password: demo1234
 * Sample code to call the API 
+
+
 import requests
 
 url = "http://ec2-54-159-5-43.compute-1.amazonaws.com:8000/insurance/api/v0/login"
@@ -38,6 +43,8 @@ print(response.text)
 * [End Point to call] - endpoint: http://ec2-54-159-5-43.compute-1.amazonaws.com:8000/insurance/api/v0/detaildata
 * [Parameters] - agencyid: 5748 year: 2012 month: 12 state: PA
 * Sample code to call the API 
+
+
 import requests
 
 url = "http://ec2-54-159-5-43.compute-1.amazonaws.com:8000/insurance/api/v0/detaildata"
@@ -52,10 +59,13 @@ response = requests.request("POST", url, data=payload, headers=headers)
 print(response.text)
 
 ## Detail agency data endpoint: 
+
 * [Api type] - Post
 * [End Point to call] - endpoint: http://ec2-54-159-5-43.compute-1.amazonaws.com:8000/insurance/api/v0/detailagencydata
 * [Parameters] - agencyid: 5748
 * Sample code to call the API 
+
+
 import requests
 
 url = "http://ec2-54-159-5-43.compute-1.amazonaws.com:8000/insurance/api/v0/detailagencydata"
@@ -70,6 +80,7 @@ headers = {
 response = requests.request("POST", url, data=payload, headers=headers)
 
 ## vendor premium endpoint
+
 * [Api type] - Post
 * [End Point to call] - endpoint: http://ec2-54-159-5-43.compute-1.amazonaws.com:8000/insurance/api/v0/vendorpremium
 * [Parameters] - agencyid: 5748
@@ -90,10 +101,13 @@ response = requests.request("POST", url, data=payload, headers=headers)
 print(response.text)
 
 ## Provides an aggregated report based on production line and state
+
 * [Api type] - GET
 * [End Point to call] - endpoint: http://ec2-54-159-5-43.compute-1.amazonaws.com:8000/insurance/api/v0/stateproductionlinepremium
 * [Parameters] - No
 * Sample code to call the API 
+
+
 import requests
 
 url = "http://ec2-54-159-5-43.compute-1.amazonaws.com:8000/insurance/api/v0/stateproductionlinepremium"
@@ -108,6 +122,8 @@ response = requests.request("GET", url, data=payload, headers=headers)
 print(response.text)
 
 ## CSV eeport export
+
+
 * [Api type] - GET
 * [End Point to call] - endpoint: http://ec2-54-159-5-43.compute-1.amazonaws.com:8000/insurance/api/v0/csvreportexport?startdate=2014-01-01&enddate=2014-12-01
 * [Parameters] - startdate: 2014-01-01 enddate: 2014-12-01
