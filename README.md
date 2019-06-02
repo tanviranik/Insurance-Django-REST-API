@@ -132,6 +132,8 @@ print(response.text)
 ### Swagger Api Implementaion For Insurance Django Rest Api
 
 [Swagger for Insurance Django Rest Api](http://ec2-54-159-5-43.compute-1.amazonaws.com:8000/insurance/api/v0/swagger-docs/)
+
+
 Swagger url for insurance Dejango rest Api has developed. It's basically used for api development. By Clicking the above url anyone can able to see apis which are exposed without a token.
 
 ### Deployment
