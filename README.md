@@ -11,7 +11,7 @@ A simple analytics platform for an Insurance company using the Kaggle dataset Ag
 
 ## API Endpoints:
 
-have implemented Django Token based authentication here. The token to access the API is:
+Django Token based authentication has implemented here. The token to access the API is:
 d110c55abdfe0cdc88359b0d718288cb06513903
 Please take a note of this token which will be needed to request data from this API.
 
@@ -137,5 +137,5 @@ print(response.text)
 Swagger url for insurance Dejango rest Api has developed. It's basically used for api development. By Clicking the above url anyone can able to see apis which are exposed without a token.
 
 ### Deployment
-The whole system is deployed into Amazon EC2 (Amazon web Service).
+The whole system has deployed into Amazon EC2 (Amazon web Service).
 
