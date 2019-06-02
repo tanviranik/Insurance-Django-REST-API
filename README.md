@@ -19,8 +19,8 @@ Please take a note of this token which will be needed to request data from this 
 * [End Point to call] - endpoint: http://ec2-54-159-5-43.compute-1.amazonaws.com:8000/insurance/api/v0/login
 * [Parameters] -                                                                                                                         
 
->>>>>>username : demo                                                                                                   
->>>>>>password: demo1234                                                                                                   
+>>>>>>>username : demo                                                                                                   
+>>>>>>>password: demo1234                                                                                                   
                
 * Sample code to call the API 
 
