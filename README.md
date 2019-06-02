@@ -25,9 +25,13 @@ Please take a note of this token which will be needed to request data from this 
 
 import requests
 url = "http://ec2-54-159-5-43.compute-1.amazonaws.com:8000/insurance/api/v0/login"
+
 payload = "username=demo&password=demo1234"
+
 headers = {'Content-Type': "application/x-www-form-urlencoded",'cache-control': "no-cache"}
+
 response = requests.request("POST", url, data=payload, headers=headers)
+
 print(response.text)
 
 
@@ -36,18 +40,27 @@ print(response.text)
 * [Api type] - POST
 * [End Point to call] - endpoint: http://ec2-54-159-5-43.compute-1.amazonaws.com:8000/insurance/api/v0/detaildata
 * [Parameters] - 
-               agencyid: 5748 
+
+               agencyid: 5748
+               
                year: 2012 
+               
                month: 12 
+               
                state: PA
                
 * Sample code to call the API 
 
 import requests
+
 url = "http://ec2-54-159-5-43.compute-1.amazonaws.com:8000/insurance/api/v0/detaildata"
+
 payload = "agencyid=5748&year=2012&month=12&state=PA"
+
 headers = {'Authorization': "Token d110c55abdfe0cdc88359b0d718288cb06513903",'cache-control': "no-cache"}
+
 response = requests.request("POST", url, data=payload, headers=headers)
+
 print(response.text)
 
 
