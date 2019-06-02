@@ -41,12 +41,11 @@ print(response.text)
 * [Api type] - POST
 * [End Point to call] - endpoint: http://ec2-54-159-5-43.compute-1.amazonaws.com:8000/insurance/api/v0/detaildata
 * [Parameters] - 
-```bash
-agencyid: 5748 
-year: 2012 
-month: 12 
-state: PA
-```    
+               agencyid: 5748 
+               year: 2012 
+               month: 12 
+               state: PA
+               
 * Sample code to call the API 
 ```python
 import requests
@@ -62,22 +61,24 @@ print(response.text)
 * [Api type] - POST
 * [End Point to call] - endpoint: http://ec2-54-159-5-43.compute-1.amazonaws.com:8000/insurance/api/v0/detailagencydata
 * [Parameters] - 
-```bash
-agencyid: 5748
-```            
+               agencyid: 5748 
+               
 * Sample code to call the API 
-```python
+
 import requests
 url = "http://ec2-54-159-5-43.compute-1.amazonaws.com:8000/insurance/api/v0/detailagencydata"
+
 payload = "agencyid=5748"
+
 headers = {
     'Authorization': "Token d110c55abdfe0cdc88359b0d718288cb06513903",
     'Content-Type': "application/x-www-form-urlencoded",
     'cache-control': "no-cache"
     }
+
 response = requests.request("POST", url, data=payload, headers=headers)
+
 print(response.text)
-```
 
 ### vendor premium endpoint
 
