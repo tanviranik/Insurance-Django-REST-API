@@ -37,7 +37,7 @@ response = requests.request("POST", url, data=payload, headers=headers)
 
 print(response.text)
 
-## Detaildata endpoint
+### Detail data endpoint
 
 * [Api type] - Post
 * [End Point to call] - endpoint: http://ec2-54-159-5-43.compute-1.amazonaws.com:8000/insurance/api/v0/detaildata
@@ -58,7 +58,7 @@ headers = {
 response = requests.request("POST", url, data=payload, headers=headers)
 print(response.text)
 
-## Detail agency data endpoint: 
+### Detail agency data endpoint: 
 
 * [Api type] - Post
 * [End Point to call] - endpoint: http://ec2-54-159-5-43.compute-1.amazonaws.com:8000/insurance/api/v0/detailagencydata
@@ -79,7 +79,7 @@ headers = {
 
 response = requests.request("POST", url, data=payload, headers=headers)
 
-## vendor premium endpoint
+### vendor premium endpoint
 
 * [Api type] - Post
 * [End Point to call] - endpoint: http://ec2-54-159-5-43.compute-1.amazonaws.com:8000/insurance/api/v0/vendorpremium
@@ -100,7 +100,7 @@ response = requests.request("POST", url, data=payload, headers=headers)
 
 print(response.text)
 
-## Provides an aggregated report based on production line and state
+### Provides an aggregated report based on production line and state
 
 * [Api type] - GET
 * [End Point to call] - endpoint: http://ec2-54-159-5-43.compute-1.amazonaws.com:8000/insurance/api/v0/stateproductionlinepremium
@@ -121,7 +121,7 @@ response = requests.request("GET", url, data=payload, headers=headers)
 
 print(response.text)
 
-## CSV eeport export
+### CSV eeport export
 
 
 * [Api type] - GET
@@ -129,13 +129,13 @@ print(response.text)
 * [Parameters] - startdate: 2014-01-01 enddate: 2014-12-01
 
 
-### Swagger Api Implementaion For Insurance Django Rest Api
+## Swagger Api Implementaion For Insurance Django Rest Api
 
 [Swagger for Insurance Django Rest Api](http://ec2-54-159-5-43.compute-1.amazonaws.com:8000/insurance/api/v0/swagger-docs/)
 
 
 Swagger url for insurance Dejango rest Api has developed. It's basically used for api development. By Clicking the above url anyone can able to see apis which are exposed without a token.
 
-### Deployment
+## Deployment
 The whole system has deployed into Amazon EC2 (Amazon web Service).
 
