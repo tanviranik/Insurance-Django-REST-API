@@ -110,11 +110,10 @@ print(response.text)
 
 * [Api type] - GET
 * [End Point to call] - endpoint: http://ec2-54-159-5-43.compute-1.amazonaws.com:8000/insurance/api/v0/csvreportexport?startdate=2014-01-01&enddate=2014-12-01
-* [Parameters] - 
-              ```sh
-               startdate: 2014-01-01
-               enddate: 2014-12-01
-              ```
+* [Parameters] -                                                                                                                       
+                  startdate: 2014-01-01                                                                                              
+                    enddate: 2014-12-01
+              
 
 ## Swagger Api Implementaion For Insurance Django Rest Api
 [Swagger for Insurance Django Rest Api](http://ec2-54-159-5-43.compute-1.amazonaws.com:8000/insurance/api/v0/swagger-docs/)
