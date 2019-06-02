@@ -38,11 +38,10 @@ print(response.text)
 
 * [Api type] - POST
 * [End Point to call] - endpoint: http://ec2-54-159-5-43.compute-1.amazonaws.com:8000/insurance/api/v0/detaildata
-* [Parameters] -                                                                                                                       
-                     agencyid: 5748                                                                                                  
-                         year: 2012                                                                                                   
-                        month: 12                                                                                                       
-                        state: PA
+* [Parameters] -
+>>>>>>>agencyid: 5748                                                                                                  
+>>>>>>>    year: 2012                                                                                                   
+>>>>>>>    month: 12                                                                                                              >>>>>>>    state: PA
               
 * Sample code to call the API 
 ```sh
