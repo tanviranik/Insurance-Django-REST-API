@@ -18,23 +18,18 @@ Please take a note of this token which will be needed to request data from this 
 * [Api type] - POST
 * [End Point to call] - endpoint: http://ec2-54-159-5-43.compute-1.amazonaws.com:8000/insurance/api/v0/login
 * [Parameters] - 
-
-```bash
-username : demo 
-password: demo1234
-```    
+               username : demo 
+               password: demo1234
+               
 * Sample code to call the API 
-```python
+
 import requests
 url = "http://ec2-54-159-5-43.compute-1.amazonaws.com:8000/insurance/api/v0/login"
 payload = "username=demo&password=demo1234"
-
 headers = {'Content-Type': "application/x-www-form-urlencoded",'cache-control': "no-cache"}
-
 response = requests.request("POST", url, data=payload, headers=headers)
-
 print(response.text)
-```
+
 
 ### Detail data endpoint
 
@@ -47,14 +42,14 @@ print(response.text)
                state: PA
                
 * Sample code to call the API 
-```python
+
 import requests
 url = "http://ec2-54-159-5-43.compute-1.amazonaws.com:8000/insurance/api/v0/detaildata"
 payload = "agencyid=5748&year=2012&month=12&state=PA"
 headers = {'Authorization': "Token d110c55abdfe0cdc88359b0d718288cb06513903",'cache-control': "no-cache"}
 response = requests.request("POST", url, data=payload, headers=headers)
 print(response.text)
-```
+
 
 ### Detail agency data endpoint: 
 
@@ -67,17 +62,13 @@ print(response.text)
 
 import requests
 url = "http://ec2-54-159-5-43.compute-1.amazonaws.com:8000/insurance/api/v0/detailagencydata"
-
 payload = "agencyid=5748"
-
 headers = {
     'Authorization': "Token d110c55abdfe0cdc88359b0d718288cb06513903",
     'Content-Type': "application/x-www-form-urlencoded",
     'cache-control': "no-cache"
     }
-
 response = requests.request("POST", url, data=payload, headers=headers)
-
 print(response.text)
 
 ### vendor premium endpoint
@@ -85,18 +76,17 @@ print(response.text)
 * [Api type] - POST
 * [End Point to call] - endpoint: http://ec2-54-159-5-43.compute-1.amazonaws.com:8000/insurance/api/v0/vendorpremium
 * [Parameters] - 
-```bash
-agencyid: 5748
-```      
+               agencyid: 5748
+      
 * Sample code to call the API 
-```python
+
 import requests
 url = "http://ec2-54-159-5-43.compute-1.amazonaws.com:8000/insurance/api/v0/vendorpremium"
 payload = "vendor=A"
 headers = {'Authorization': "Token d110c55abdfe0cdc88359b0d718288cb06513903",'cache-control': "no-cache"}
 response = requests.request("POST", url, data=payload, headers=headers)
 print(response.text)
-```
+
 
 ### Provides an aggregated report based on production line and state
 
@@ -104,24 +94,24 @@ print(response.text)
 * [End Point to call] - endpoint: http://ec2-54-159-5-43.compute-1.amazonaws.com:8000/insurance/api/v0/stateproductionlinepremium
 * [Parameters] - No
 * Sample code to call the API 
-```python
+
 import requests
 url = "http://ec2-54-159-5-43.compute-1.amazonaws.com:8000/insurance/api/v0/stateproductionlinepremium"
 payload = ""
 headers = {'cache-control': "no-cache"}
 response = requests.request("GET", url, data=payload, headers=headers)
 print(response.text)
-```
+
 
 ### CSV eeport export
 
 * [Api type] - GET
 * [End Point to call] - endpoint: http://ec2-54-159-5-43.compute-1.amazonaws.com:8000/insurance/api/v0/csvreportexport?startdate=2014-01-01&enddate=2014-12-01
 * [Parameters] - 
-```bash
-startdate: 2014-01-01
-enddate: 2014-12-01
-```
+
+               startdate: 2014-01-01
+               enddate: 2014-12-01
+
 
 ## Swagger Api Implementaion For Insurance Django Rest Api
 [Swagger for Insurance Django Rest Api](http://ec2-54-159-5-43.compute-1.amazonaws.com:8000/insurance/api/v0/swagger-docs/)
