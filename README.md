@@ -28,8 +28,11 @@ password: demo1234
 import requests
 url = "http://ec2-54-159-5-43.compute-1.amazonaws.com:8000/insurance/api/v0/login"
 payload = "username=demo&password=demo1234"
+
 headers = {'Content-Type': "application/x-www-form-urlencoded",'cache-control': "no-cache"}
+
 response = requests.request("POST", url, data=payload, headers=headers)
+
 print(response.text)
 ```
 
