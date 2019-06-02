@@ -24,15 +24,14 @@ Please take a note of this token which will be needed to request data from this 
                username : demo 
                password: demo1234
 * Sample code to call the API 
-
-
+```python
 import requests
 url = "http://ec2-54-159-5-43.compute-1.amazonaws.com:8000/insurance/api/v0/login"
 payload = "username=demo&password=demo1234"
 headers = {'Content-Type': "application/x-www-form-urlencoded",'cache-control': "no-cache"}
 response = requests.request("POST", url, data=payload, headers=headers)
 print(response.text)
-
+```
 ### Detail data endpoint
 
 * [Api type] - POST
@@ -44,12 +43,14 @@ print(response.text)
                  state: PA
 * Sample code to call the API 
 
+```python
 import requests
 url = "http://ec2-54-159-5-43.compute-1.amazonaws.com:8000/insurance/api/v0/detaildata"
 payload = "agencyid=5748&year=2012&month=12&state=PA"
 headers = {'Authorization': "Token d110c55abdfe0cdc88359b0d718288cb06513903",'cache-control': "no-cache"}
 response = requests.request("POST", url, data=payload, headers=headers)
 print(response.text)
+```
 
 ### Detail agency data endpoint: 
 
@@ -59,6 +60,7 @@ print(response.text)
                agencyid: 5748
 * Sample code to call the API 
 
+```python
 import requests
 url = "http://ec2-54-159-5-43.compute-1.amazonaws.com:8000/insurance/api/v0/detailagencydata"
 payload = "agencyid=5748"
@@ -69,6 +71,7 @@ headers = {
     }
 response = requests.request("POST", url, data=payload, headers=headers)
 print(response.text)
+```
 
 ### vendor premium endpoint
 
@@ -78,12 +81,14 @@ print(response.text)
                agencyid: 5748
 * Sample code to call the API 
 
+```python
 import requests
 url = "http://ec2-54-159-5-43.compute-1.amazonaws.com:8000/insurance/api/v0/vendorpremium"
 payload = "vendor=A"
 headers = {'Authorization': "Token d110c55abdfe0cdc88359b0d718288cb06513903",'cache-control': "no-cache"}
 response = requests.request("POST", url, data=payload, headers=headers)
 print(response.text)
+```
 
 ### Provides an aggregated report based on production line and state
 
@@ -93,13 +98,14 @@ print(response.text)
                   No
 * Sample code to call the API 
 
-
+```python
 import requests
 url = "http://ec2-54-159-5-43.compute-1.amazonaws.com:8000/insurance/api/v0/stateproductionlinepremium"
 payload = ""
 headers = {'cache-control': "no-cache"}
 response = requests.request("GET", url, data=payload, headers=headers)
 print(response.text)
+```
 
 ### CSV eeport export
 
